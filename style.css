@@ -1,6 +1,17 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+}
+
+.clearfix::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.container {
+  /* background-color: red; */
 }
 .article {
   border: 4px solid #534564;
@@ -9,6 +20,7 @@
   margin: 50px auto;
   position: relative;
 }
+
 .title {
   font-size: 32px;
   text-align: center;
@@ -21,6 +33,8 @@
 
 .image {
   border-radius: 22px;
+  float: left;
+  margin-right: 40px;
 }
 
 .price {
@@ -49,6 +63,7 @@
   font-weight: bold;
   color: #827592;
   margin-bottom: 20px;
+
 }
 
 .more-info:link, .more-info:visited{
@@ -116,4 +131,16 @@
   background-color: #dcd2e9;
   color: #534564;
   border-top: 4px solid #534564;
+}
+
+.peroperties {
+  float: left;
+  width: 243px;
+  margin-right: 40px;
+  margin-top: 20px;
+}
+
+.details {
+  float: right;
+  width: 243px;
 }
